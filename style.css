@@ -1,0 +1,726 @@
+/* =========================================================
+   VIRELIA HEALTH
+   Diseño inspirado en la interfaz de referencia
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #174f67;
+  --blue-dark: #103d50;
+  --royal-blue: #1457d9;
+  --yellow: #f5c400;
+  --yellow-light: #fff4b8;
+  --teal: #00a99d;
+  --white: #ffffff;
+  --gray: #f4f5f6;
+  --text: #444;
+  --border: #e3e3e3;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+/* =========================================================
+   BARRA PRINCIPAL
+   ========================================================= */
+
+.navbar {
+  height: 82px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,.07);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--blue);
+  min-width: 210px;
+}
+
+.logo-symbol {
+  width: 39px;
+  height: 39px;
+  background: var(--royal-blue);
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.logo-name {
+  display: block;
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.logo-sub {
+  display: block;
+  color: var(--royal-blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-left: 2px;
+}
+
+/* Menú principal */
+.main-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-btn {
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: var(--royal-blue);
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .2s;
+  padding: 0 4px;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  color: var(--blue);
+}
+
+.arrow {
+  font-size: 17px;
+  margin-left: 3px;
+}
+
+/* =========================================================
+   MENÚ NOSOTROS
+   ========================================================= */
+
+.nav-dropdown {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 81px;
+  right: -5px;
+  width: 390px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 5px 18px rgba(0,0,0,.16);
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 14px 17px;
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  background: white;
+  color: var(--royal-blue);
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.dropdown-menu button:hover {
+  background: #f6f8ff;
+  padding-left: 23px;
+  color: var(--blue);
+}
+
+/* =========================================================
+   HERO / INICIO
+   ========================================================= */
+
+.hero {
+  height: 520px;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(105deg, #f7f7f7 0%, #ffffff 53%, #eef2f4 100%);
+  border-bottom: 8px solid var(--yellow);
+}
+
+/* Forma amarilla */
+.hero-yellow-shape {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  right: -120px;
+  top: -170px;
+  border-radius: 50%;
+  background: var(--yellow);
+  opacity: .92;
+}
+
+/* Forma azul */
+.hero-blue-shape {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  right: 80px;
+  bottom: -220px;
+  border-radius: 50%;
+  background: var(--royal-blue);
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 3;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 620px;
+}
+
+.hero-small {
+  color: var(--royal-blue);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 9px;
+}
+
+.hero h1 {
+  color: var(--blue);
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 18px;
+  max-width: 550px;
+  margin-bottom: 25px;
+}
+
+.hero-button {
+  background: var(--royal-blue);
+  color: white;
+  border: none;
+  padding: 13px 28px;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.hero-button:hover {
+  background: var(--blue);
+}
+
+.hero-placeholder {
+  position: absolute;
+  z-index: 4;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 330px;
+  border: 3px dashed #c7cdd0;
+  background: rgba(255,255,255,.72);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #9aa3a7;
+  text-align: center;
+}
+
+.plus-large {
+  font-size: 75px;
+  color: var(--royal-blue);
+  font-weight: 300;
+}
+
+/* =========================================================
+   SECCIÓN INFERIOR DEL INICIO
+   ========================================================= */
+
+.quick-section {
+  padding: 55px 7%;
+  text-align: center;
+}
+
+.quick-section h2 {
+  color: var(--blue);
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.quick-section > p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+.quick-cards {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.quick-card {
+  padding: 25px;
+  border: 1px solid var(--border);
+  background: white;
+  box-shadow: 0 3px 12px rgba(0,0,0,.06);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: var(--royal-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.quick-card h3 {
+  color: var(--blue);
+  margin-bottom: 5px;
+}
+
+/* =========================================================
+   PÁGINAS DE NOSOTROS
+   ========================================================= */
+
+.page.hidden {
+  display: none;
+}
+
+.inner-page {
+  max-width: 1120px;
+  margin: 50px auto;
+  padding: 45px;
+  min-height: 500px;
+  background: white;
+  box-shadow: 0 3px 15px rgba(0,0,0,.08);
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 22px;
+  margin-bottom: 27px;
+}
+
+.page-title > span {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.page-title small {
+  color: var(--royal-blue);
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.page-title h2 {
+  color: var(--blue);
+  font-size: 31px;
+  line-height: 1.2;
+}
+
+/* =========================================================
+   HISTORIA
+   ========================================================= */
+
+.timeline {
+  margin-top: 30px;
+  border-left: 4px solid var(--yellow);
+  padding-left: 25px;
+}
+
+.timeline > div {
+  margin-bottom: 24px;
+}
+
+.timeline strong {
+  color: var(--royal-blue);
+  font-size: 20px;
+}
+
+/* =========================================================
+   MISIÓN / VISIÓN
+   ========================================================= */
+
+.two-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.two-cards article {
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-top: 5px solid var(--royal-blue);
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.two-cards h3 {
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+/* =========================================================
+   OBJETIVOS Y MODERNIZACIÓN
+   ========================================================= */
+
+.objective-grid,
+.modern-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.objective-grid article,
+.modern-grid article {
+  padding: 27px;
+  border: 1px solid #ddd;
+  border-left: 5px solid var(--yellow);
+  transition: .2s;
+}
+
+.objective-grid article:hover,
+.modern-grid article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 17px rgba(0,0,0,.08);
+}
+
+.objective-grid b,
+.modern-grid b {
+  color: var(--royal-blue);
+}
+
+.objective-grid h3,
+.modern-grid h3 {
+  color: var(--blue);
+  margin: 5px 0;
+}
+
+/* =========================================================
+   VALORES
+   ========================================================= */
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.values article {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.values article > span {
+  min-width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: var(--royal-blue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.values h3 {
+  color: var(--blue);
+}
+
+/* =========================================================
+   ORGANIGRAMA
+   ========================================================= */
+
+.org-chart {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.org-main {
+  display: inline-block;
+  min-width: 230px;
+  padding: 16px 25px;
+  background: var(--royal-blue);
+  color: white;
+  font-weight: 800;
+  border-radius: 3px;
+}
+
+.org-main.dark {
+  background: var(--blue);
+}
+
+.org-line {
+  width: 3px;
+  height: 30px;
+  background: var(--yellow);
+  margin: auto;
+}
+
+.org-departments {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.org-departments div {
+  padding: 18px 10px;
+  background: #f7f8fa;
+  border: 2px solid #d9e1e6;
+}
+
+.org-departments strong {
+  display: block;
+  color: var(--blue);
+}
+
+.org-departments small {
+  color: #666;
+}
+
+/* =========================================================
+   TRABAJA CON NOSOTROS
+   ========================================================= */
+
+.work-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+
+.work-layout h3 {
+  color: var(--blue);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.work-layout ul {
+  margin: 20px 0 0 20px;
+}
+
+#careerForm {
+  padding: 27px;
+  background: #f6f8fa;
+  border: 1px solid #ddd;
+}
+
+#careerForm label {
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+#careerForm input,
+#careerForm select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cfd4d8;
+  background: white;
+}
+
+#careerForm button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  background: var(--royal-blue);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#careerForm button:hover {
+  background: var(--blue);
+}
+
+#formMessage {
+  margin-top: 10px;
+  color: var(--royal-blue);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  background: var(--blue);
+  color: white;
+  padding: 28px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer strong {
+  color: var(--yellow);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .logo {
+    min-width: auto;
+  }
+
+  .logo-name {
+    font-size: 22px;
+  }
+
+  .main-nav {
+    gap: 12px;
+  }
+
+  .nav-btn {
+    font-size: 11px;
+  }
+
+  .hero-placeholder {
+    display: none;
+  }
+
+  .quick-cards,
+  .two-cards,
+  .objective-grid,
+  .modern-grid,
+  .values,
+  .work-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .org-departments {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .inner-page {
+    margin: 25px 15px;
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .logo-symbol {
+    width: 32px;
+    height: 32px;
+    font-size: 23px;
+  }
+
+  .logo-sub {
+    display: none;
+  }
+
+  .main-nav {
+    gap: 4px;
+  }
+
+  .nav-btn {
+    font-size: 9px;
+  }
+
+  .dropdown-menu {
+    right: -30px;
+    width: 300px;
+  }
+
+  .hero {
+    height: 470px;
+  }
+
+  .hero-content {
+    left: 7%;
+    right: 7%;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .org-departments {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
