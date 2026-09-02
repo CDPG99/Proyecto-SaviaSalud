@@ -1,1360 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicio - Virelia Health">
+  <title>Inicio | Virelia Health</title>
 
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Virelia Health</title>
-
-    <!-- Conexión con el archivo CSS -->
-    <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
-
 <body>
-
-
-    <!-- =====================================================
-         BARRA DE NAVEGACIÓN PRINCIPAL
-         ===================================================== -->
-
-    <header class="navbar">
-
-
-        <!-- LOGO -->
-
-        <div class="logo">
-
-            <div class="logo-symbol">
-                +
-            </div>
-
-            <div>
-
-                <span class="logo-name">
-                    virelia
-                </span>
-
-                <span class="logo-sub">
-                    HEALTH
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- MENÚ PRINCIPAL -->
-
-        <nav class="main-nav">
-
-
-            <!-- INICIO -->
-
-            <button
-                class="nav-btn"
-                data-page="inicio">
-
-                INICIO
-
-            </button>
-
-
-            <!-- AFILIADOS -->
-
-            <button class="nav-btn">
-
-                AFILIADOS
-
-                <span class="arrow">
-                    ⌄
-                </span>
-
-            </button>
-
-
-            <!-- =================================================
-                 NOSOTROS
-                 ESTE ES EL ÚNICO MENÚ FUNCIONAL POR AHORA
-                 ================================================= -->
-
-            <div class="nav-dropdown">
-
-
-                <button
-                    class="nav-btn nosotros-btn"
-                    id="nosotrosBtn">
-
-                    NOSOTROS
-
-                    <span class="arrow">
-                        ⌄
-                    </span>
-
-                </button>
-
-
-                <!-- SUBMENÚ DE NOSOTROS -->
-
-                <div
-                    class="dropdown-menu"
-                    id="nosotrosMenu">
-
-
-                    <button
-                        data-page="historia">
-
-                        Historia
-
-                    </button>
-
-
-                    <button
-                        data-page="mision">
-
-                        Misión y visión
-
-                    </button>
-
-
-                    <button
-                        data-page="objetivos">
-
-                        Objetivos estratégicos
-
-                    </button>
-
-
-                    <button
-                        data-page="valores">
-
-                        Valores
-
-                    </button>
-
-
-                    <button
-                        data-page="organigrama">
-
-                        Organigrama
-
-                    </button>
-
-
-                    <button
-                        data-page="modernizacion">
-
-                        Plan de modernización y saneamiento financiero
-
-                    </button>
-
-
-                    <button
-                        data-page="trabaja">
-
-                        Trabaja con nosotros
-
-                    </button>
-
-
-                </div>
-
-            </div>
-
-
-        </nav>
-
-    </header>
-
-
-
-    <!-- =====================================================
-         CONTENIDO PRINCIPAL
-         ===================================================== -->
-
-    <main>
-
-
-        <!-- =================================================
-             PÁGINA INICIO
-             ================================================= -->
-
-        <section
-            id="inicio"
-            class="page home-page">
-
-
-            <!-- BANNER PRINCIPAL -->
-
-            <div class="hero">
-
-
-                <!-- Formas decorativas -->
-                <div class="hero-yellow-shape"></div>
-
-                <div class="hero-blue-shape"></div>
-
-
-                <!-- TEXTO DEL BANNER -->
-
-                <div class="hero-content">
-
-
-                    <p class="hero-small">
-
-                        VIRELIA HEALTH
+<header class="navbar">
+  <a class="logo" href="index.html" aria-label="Ir al inicio de Virelia Health">
+    <div class="logo-symbol">+</div>
+    <div><span class="logo-name">Virelia</span><span class="logo-sub">HEALTH</span></div>
+  </a>
+  <nav class="main-nav" aria-label="Navegación principal">
+    <a class="nav-btn nav-link" href="index.html">INICIO</a>
+    <div class="nav-dropdown">
+      <button class="nav-btn afiliados-btn" id="afiliadosBtn" type="button" aria-expanded="false" aria-controls="afiliadosMenu">AFILIADOS <span class="arrow">⌄</span></button>
+      <div class="dropdown-menu afiliados-menu" id="afiliadosMenu">
+        <a class="dropdown-all" href="afiliados/index.html">Ver sección Afiliados</a>
+        <a href="afiliados/muerte-digna/index.html">Muerte digna</a>
+<a href="afiliados/preguntas-frecuentes/index.html">Preguntas frecuentes</a>
+<a href="afiliados/medicamentos/index.html">Medicamentos</a>
+<a href="afiliados/medicina-domiciliaria/index.html">Medicina domiciliaria</a>
+      </div>
+    </div>
+    <div class="nav-dropdown">
+      <button class="nav-btn nosotros-btn" id="nosotrosBtn" type="button" aria-expanded="false" aria-controls="nosotrosMenu">NOSOTROS <span class="arrow">⌄</span></button>
+      <div class="dropdown-menu" id="nosotrosMenu">
+        <a class="dropdown-all" href="nosotros/index.html">Ver sección Nosotros</a>
+        <a href="nosotros/historia/index.html">Historia</a>
+<a href="nosotros/mision/index.html">Misión y visión</a>
+<a href="nosotros/objetivos/index.html">Objetivos estratégicos</a>
+<a href="nosotros/valores/index.html">Valores</a>
+<a href="nosotros/organigrama/index.html">Organigrama</a>
+<a href="nosotros/modernizacion/index.html">Plan de modernización y saneamiento financiero</a>
+<a href="nosotros/trabaja/index.html">Trabaja con nosotros</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+<section class="page home-page" id="inicio">
+<!-- BANNER PRINCIPAL -->
+<div class="hero">
+<!-- Formas decorativas -->
+<div class="hero-yellow-shape"></div>
+<div class="hero-blue-shape"></div>
+<!-- TEXTO DEL BANNER -->
+<div class="hero-content">
+<p class="hero-small">
+
+                        Virelia Health
 
                     </p>
-
-
-                    <h1>
+<h1>
 
                         Cuidamos tu salud,
-                        <br>
+                        <br/>
                         cuidamos de ti.
 
                     </h1>
-
-
-                    <p class="hero-text">
+<p class="hero-text">
 
                         Trabajamos para brindar atención
                         en salud cercana, oportuna y de
                         calidad a nuestros afiliados.
 
                     </p>
-
-
-                    <button class="hero-button">
+<button class="hero-button">
 
                         CONOCE MÁS
 
                     </button>
-
-
-                </div>
-
-
-                <!-- ESPACIO RESERVADO PARA IMAGEN -->
-
-                <div class="hero-placeholder">
-
-                    <div class="plus-large">
+</div>
+<!-- ESPACIO RESERVADO PARA IMAGEN -->
+<div class="hero-placeholder">
+<div class="plus-large">
                         +
                     </div>
-
-                    <p>
+<p>
 
                         Espacio destinado para
-                        <br>
+                        <br/>
                         imagen principal
 
                     </p>
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- =================================================
+</div>
+</div>
+<!-- =================================================
                  TARJETAS INFORMATIVAS
                  ================================================= -->
-
-            <section class="quick-section">
-
-
-                <h2>
+<section class="quick-section">
+<h2>
                     Virelia Health
                 </h2>
-
-
-                <p>
+<p>
 
                     Una organización comprometida
                     con el bienestar, la atención y la
                     calidad de vida de sus afiliados.
 
                 </p>
-
-
-                <div class="quick-cards">
-
-
-                    <!-- TARJETA 1 -->
-
-                    <div class="quick-card">
-
-                        <div class="card-icon">
+<div class="quick-cards">
+<!-- TARJETA 1 -->
+<div class="quick-card">
+<div class="card-icon">
                             +
                         </div>
-
-                        <h3>
+<h3>
                             Atención en salud
                         </h3>
-
-                        <p>
+<p>
 
                             Servicios orientados a las
                             necesidades de nuestros afiliados.
 
                         </p>
-
-                    </div>
-
-
-                    <!-- TARJETA 2 -->
-
-                    <div class="quick-card">
-
-                        <div class="card-icon">
+</div>
+<!-- TARJETA 2 -->
+<div class="quick-card">
+<div class="card-icon">
                             ✓
                         </div>
-
-                        <h3>
+<h3>
                             Calidad
                         </h3>
-
-                        <p>
+<p>
 
                             Procesos enfocados en una
                             atención segura y oportuna.
 
                         </p>
-
-                    </div>
-
-
-                    <!-- TARJETA 3 -->
-
-                    <div class="quick-card">
-
-                        <div class="card-icon">
+</div>
+<!-- TARJETA 3 -->
+<div class="quick-card">
+<div class="card-icon">
                             ♥
                         </div>
-
-                        <h3>
+<h3>
                             Cercanía
                         </h3>
-
-                        <p>
+<p>
 
                             Una relación basada en
                             confianza, respeto y acompañamiento.
 
                         </p>
-
-                    </div>
-
-
-                </div>
-
-            </section>
-
-
-        </section>
-
-
-
-        <!-- =====================================================
-             HISTORIA
-             ===================================================== -->
-
-        <section
-            id="historia"
-            class="page inner-page hidden">
-
-
-            <div class="page-title">
-
-                <span>
-                    01
-                </span>
-
-                <div>
-
-                    <small>
-                        NOSOTROS
-                    </small>
-
-                    <h2>
-                        Historia
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <p>
-
-                "En el año 2011, nace EUCALISALUD EPS como aseguradora del régimen subsidiado para dar respuesta desde el 
-                Municipio de Bogotá y la Gobernación de Cundinamarca frente a la salida del aseguramiento en el régimen 
-                subsidiado de Comfama del departamento. El 27 de marzo de 2011, se da el acto de constitución bajo la razón 
-                social de Alianza Bogotá – Cundinamarca E.P.S. S.A.S. y la marca EUCALISALUD EPS. Entidad de economía mixta, 
-                cuya composición accionaria se encuentra dada por:
-                Gobernación de Cundinamarca: 40% 
-                Alcaldía de Bogotá: 33% 
-                Caja de Compensación Familiar Comfama: 27% 
-
-
-            </p>
-
-
-            <p>
-                En Cundinamarca EUCALISALUD EPS es la entidad aseguradora con mayor número de afiliados en el régimen subsidiado 
-                con una participación del 58% del total de afiliados (Cambio Menor); siendo la EPS con mayor presencia en el 
-                Departamento, toda vez que participa en el régimen subsidiado de 118 municipios que representan el 94% del total 
-                de municipios (Cambio Menor). Por decisión de la Asamblea de Accionistas la operación inicial de la EPS estuvo a 
-                cargo de COMFAMA como operador temporal (Cambio Menor), esto se mantuvo hasta que entre septiembre y diciembre de 
-                2014 (Cambio Mayor - se adelanta un año) EUCALISALUD EPS asumió paulatinamente la operación organizacional y en 
-                febrero de 2015 (Cambio Mayor) se asumió de manera completa la operación de la empresa, este proceso trajo consigo 
-                la necesidad de diseñar y contratar una planta de cargos y proyectar una estructura organizacional que pudiera 
-                soportar la operación en sus procesos."
-
-            </p>
-
-
-            <!-- LÍNEA DE TIEMPO -->
-
-            <div class="timeline">
-
-
-                <div>
-
-                    <strong>
-                        2013
-                    </strong>
-
-                    <p>
-                        Inicio y consolidación de la organización.
-                    </p>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        2016
-                    </strong>
-
-                    <p>
-                        Fortalecimiento de la operación
-                        y estructura organizacional.
-                    </p>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        2020
-                    </strong>
-
-                    <p>
-                        Implementación de estrategias
-                        de modernización.
-                    </p>
-
-                </div>
-
-
-                <div>
-
-                    <strong>
-                        Actualidad
-                    </strong>
-
-                    <p>
-                        Transformación y fortalecimiento
-                        de la atención.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =====================================================
-             MISIÓN Y VISIÓN
-             ===================================================== -->
-
-        <section
-            id="mision"
-            class="page inner-page hidden">
-
-
-            <div class="page-title">
-
-                <span>
-                    02
-                </span>
-
-                <div>
-
-                    <small>
-                        DIRECCIONAMIENTO
-                    </small>
-
-                    <h2>
-                        Misión y visión
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <div class="two-cards">
-
-
-                <!-- MISIÓN -->
-
-                <article>
-
-                    <div class="circle">
-                        M
-                    </div>
-
-                    <h3>
-                        Misión
-                    </h3>
-
-                    <p>
-
-                      Somos una Entidad Administradora de Planes de Beneficios 
-                      de Salud que gestiona el aseguramiento de la población pobre 
-                      y vulnerable, para impactar en la calidad de vida de sus afiliados.
-
-                    </p>
-
-                </article>
-
-
-                <!-- VISIÓN -->
-
-                <article>
-
-                    <div class="circle">
-                        V
-                    </div>
-
-                    <h3>
-                        Visión
-                    </h3>
-
-                    <p>
-
-                        En el 2028 seremos la mejor alternativa de aseguramiento en régimen 
-                        subsidiado para la población pobre y vulnerable del departamento de 
-                        Cundinamarca.
-
-
-                    </p>
-
-                </article>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =====================================================
-             OBJETIVOS ESTRATÉGICOS
-             ===================================================== -->
-
-        <section
-            id="objetivos"
-            class="page inner-page hidden">
-
-
-            <div class="page-title">
-
-                <span>
-                    03
-                </span>
-
-                <div>
-
-                    <small>
-                        PLANEACIÓN
-                    </small>
-
-                    <h2>
-                        Objetivos estratégicos
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <div class="objective-grid">
-
-
-                <!-- OBJETIVO 1 -->
-
-                <article>
-
-                    <b>
-                        01
-                    </b>
-
-                    <h3>
-                        Objetivo 1.
-                    </h3>
-
-                    <p>
-
-                        •	Convertir la EPS en el eje articulador de la política de salud de Cundinamarca, 
-                            bajo lo que se conoce a nivel mundial como una "Red Integrada de Servicios de Salud".
-
-                    </p>
-
-                </article>
-
-
-                <!-- OBJETIVO 2 -->
-
-                <article>
-
-                    <b>
-                        02
-                    </b>
-
-                    <h3>
-                        Objetivo 2.
-                    </h3>
-
-                    <p>
-
-                        •	Controlar la variación en la probabilidad de ocurrencia de una condición de salud o de su 
-                            severidad y consecuencias, denominado como el riesgo primario.
-
-                    </p>
-
-                </article>
-
-
-                <!-- OBJETIVO 3 -->
-
-                <article>
-
-                    <b>
-                        03
-                    </b>
-
-                    <h3>
-                        Objetivo 3.
-                    </h3>
-
-                    <p>
-
-                        •	Controlar la probabilidad de ocurrencia de eventos evitables atribuibles a la prestación de 
-                            servicios que afectan la calidad y el resultado esperado, denominado como el riesgo técnico.
-
-                    </p>
-
-                </article>
-
-
-                <!-- OBJETIVO 4 -->
-
-                <article>
-
-                    <b>
-                        04
-                    </b>
-
-                    <h3>
-                        Objetivo 4.
-                    </h3>
-
-                    <p>
-
-                        •	Controlar la variación en el costo de atención en salud asociado al proceso de prestación de 
-                            servicios, denominado como el riesgo financiero.
-
-                    </p>
-
-                </article>
-
-
-                <!-- OBJETIVO 5 -->
-
-                <article>
-
-                    <b>
-                        05
-                    </b>
-
-                    <h3>
-                        Objetivo 5.
-                    </h3>
-
-                    <p>
-
-                        •   Controlar la probabilidad de fallas en la implementación de los planes y estrategias de negocio, 
-                            en la asignación de recursos y en poder adaptarse a los cambios del entorno, denominado como el 
-                            riesgo estratégico.
-
-                    </p>
-
-                </article>
-
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =====================================================
-             VALORES
-             ===================================================== -->
-
-        <section
-            id="valores"
-            class="page inner-page hidden">
-
-
-            <div class="page-title">
-
-                <span>
-                    04
-                </span>
-
-                <div>
-
-                    <small>
-                        IDENTIDAD
-                    </small>
-
-                    <h2>
-                        Valores
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <div class="values">
-
-
-                <!-- RESPETO -->
-
-                <article>
-
-                    <span>
-                        R
-                    </span>
-
-                    <div>
-
-                        <h3>
-                            Respeto
-                        </h3>
-
-                        <p>
-
-                            Valoramos a los otros como sujetos de derechos, los cuales no solo merecen nuestro reconocimiento por
-                            su dignidad humana, sino que deben ser protegidos y garantizados por medio de nuestras acciones.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- EQUIDAD -->
-
-                <article>
-
-                    <span>
-                        E
-                    </span>
-
-                    <div>
-
-                        <h3>
-                            Equidad
-                        </h3>
-
-                        <p>
-
-                            Buscamos de manera permanente reducir las brechas para asegurar que aumente el nivel de salud de la 
-                            población con servicios oportunos y accesibles.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- TRANSPARENCIA -->
-
-                <article>
-
-                    <span>
-                        T
-                    </span>
-
-                    <div>
-
-                        <h3>
-                            Transparencia
-                        </h3>
-
-                        <p>
-
-                            Somos transparentes en todo lo que hacemos; rendimos cuentas de nuestra gestión, ponemos todo sobre 
-                            la mesa y estamos abiertos a compartir la información pública con quien lo requiera, ya que entendemos que
-                            EUCALISALUD EPS es propiedad de los cundinamarqueses.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- CERCANÍA -->
-
-                <article>
-
-                    <span>
-                        C
-                    </span>
-
-                    <div>
-
-                        <h3>
-                            Cercanía
-                        </h3>
-
-                        <p>
-
-                            Trabajamos para que todos nuestros afiliados se sientan siempre acompañados por la EAPB en cada una de las 
-                            etapas de su proceso de salud-enfermedad y desde su sitio de residencia.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- RESPONSABILIDAD -->
-
-                <article>
-
-                    <span>
-                        R
-                    </span>
-
-                    <div>
-
-                        <h3>
-                            Responsabilidad
-                        </h3>
-
-                        <p>
-
-                            Actuamos siempre pensando en el bienestar y el respeto de cada uno de los grupos de interés y en responder por 
-                            la buena gestión de EUCALISALUD EPS.
-
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =====================================================
-             ORGANIGRAMA
-             ===================================================== -->
-
-        <section
-            id="organigrama"
-            class="page inner-page hidden">
-
-
-            <div class="page-title">
-
-                <span>
-                    05
-                </span>
-
-                <div>
-
-                    <small>
-                        ESTRUCTURA
-                    </small>
-
-                    <h2>
-                        Organigrama
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <div class="org-chart">
-
-
-                <!-- NIVEL 1 -->
-
-                <div class="org-main">
-
-                    Junta Directiva
-
-                </div>
-
-
-                <div class="org-line"></div>
-
-
-                <!-- NIVEL 2 -->
-
-                <div class="org-main dark">
-
-                    Dirección General
-
-                </div>
-
-
-                <div class="org-line"></div>
-
-
-                <!-- NIVEL 3 -->
-
-                <div class="org-departments">
-
-
-                    <div>
-
-                        <strong>
-                            Área de Salud
-                        </strong>
-
-                        <small>
-                            Gestión del riesgo
-                        </small>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>
-                            Área Financiera
-                        </strong>
-
-                        <small>
-                            Recursos y sostenibilidad
-                        </small>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>
-                            Talento Humano
-                        </strong>
-
-                        <small>
-                            Gestión de personas
-                        </small>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>
-                            Control y Auditoría
-                        </strong>
-
-                        <small>
-                            Seguimiento
-                        </small>
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =====================================================
-             PLAN DE MODERNIZACIÓN
-             ===================================================== -->
-
-        <section
-            id="modernizacion"
-            class="page inner-page hidden">
-
-
-            <div class="page-title">
-
-                <span>
-                    06
-                </span>
-
-                <div>
-
-                    <small>
-                        TRANSFORMACIÓN
-                    </small>
-
-                    <h2>
-                        Plan de modernización y saneamiento financiero
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <p>
-
-                ¿Qué es?
-                El Plan de Modernización de EUCALISALUD EPS tiene como propósito fundamental lograr que la entidad se convierta en el eje 
-                articulador de la política pública de salud de Cundinamarca, en torno a lo que a nivel mundial se conoce como una red 
-                integrada de servicios de salud.
-
-                Esta red debe estar enfocada en garantizar que sus usuarios gocen de una protección integral en salud, que les permita 
-                acceder a las actividades de promoción, prevención, diagnóstico, tratamiento, rehabilitación y paliación. Estos servicios 
-                serían ofrecidos por un conjunto integrado de prestadores públicos y privados, capaces de entregar todos los servicios con 
-                calidad y calidez, en donde prime el bienestar de las personas por encima de los aspectos financieros.
-
-
-            </p>
-
-
-            <div class="modern-grid">
-
-
-                <article>
-
-                    <b>
-                        01
-                    </b>
-
-                    <h3>
-                        Gestión en salud
-                    </h3>
-
-                    <p>
-
-                        Fortalecimiento de las acciones
-                        de promoción y prevención.
-
-                    </p>
-
-                </article>
-
-
-                <article>
-
-                    <b>
-                        02
-                    </b>
-
-                    <h3>
-                        Servicios
-                    </h3>
-
-                    <p>
-
-                        Mejora de la articulación y
-                        calidad de la atención.
-
-                    </p>
-
-                </article>
-
-
-                <article>
-
-                    <b>
-                        03
-                    </b>
-
-                    <h3>
-                        Gestión financiera
-                    </h3>
-
-                    <p>
-
-                        Uso eficiente y responsable
-                        de los recursos.
-
-                    </p>
-
-                </article>
-
-
-                <article>
-
-                    <b>
-                        04
-                    </b>
-
-                    <h3>
-                        Gobierno
-                    </h3>
-
-                    <p>
-
-                        Fortalecimiento de la transparencia
-                        y toma de decisiones.
-
-                    </p>
-
-                </article>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =====================================================
-             TRABAJA CON NOSOTROS
-             ===================================================== -->
-
-        <section
-            id="trabaja"
-            class="page inner-page hidden">
-
-
-            <div class="page-title">
-
-                <span>
-                    07
-                </span>
-
-                <div>
-
-                    <small>
-                        TALENTO
-                    </small>
-
-                    <h2>
-                        Trabaja con nosotros
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <div class="work-layout">
-
-
-                <!-- INFORMACIÓN -->
-
-                <div>
-
-                    <h3>
-                        Haz parte de nuestro equipo
-                    </h3>
-
-
-                    <p>
-
-                        Buscamos personas comprometidas
-                        con el servicio, la innovación,
-                        el trabajo en equipo y el
-                        bienestar de la comunidad.
-
-                    </p>
-
-
-                    <ul>
-
-                        <li>
-                            Ambiente colaborativo.
-                        </li>
-
-                        <li>
-                            Oportunidades de aprendizaje.
-                        </li>
-
-                        <li>
-                            Trabajo orientado a las personas.
-                        </li>
-
-                        <li>
-                            Participación en procesos
-                            de innovación.
-                        </li>
-
-                    </ul>
-
-
-                </div>
-
-
-                <!-- FORMULARIO -->
-
-                <form id="careerForm">
-
-
-                    <h3>
-                        Déjanos tu información
-                    </h3>
-
-
-                    <label for="nombre">
-                        Nombre completo
-                    </label>
-
-                    <input
-                        id="nombre"
-                        type="text"
-                        placeholder="Tu nombre"
-                        required>
-
-
-                    <label for="correo">
-                        Correo electrónico
-                    </label>
-
-                    <input
-                        id="correo"
-                        type="email"
-                        placeholder="correo@ejemplo.com"
-                        required>
-
-
-                    <label for="area">
-                        Área de interés
-                    </label>
-
-
-                    <select id="area">
-
-                        <option>
-                            Atención en salud
-                        </option>
-
-                        <option>
-                            Administración
-                        </option>
-
-                        <option>
-                            Tecnología
-                        </option>
-
-                        <option>
-                            Finanzas
-                        </option>
-
-                        <option>
-                            Talento humano
-                        </option>
-
-                    </select>
-
-
-                    <button type="submit">
-
-                        ENVIAR POSTULACIÓN
-
-                    </button>
-
-
-                    <p id="formMessage"></p>
-
-
-                </form>
-
-
-            </div>
-
-
-        </section>
-
-
-    </main>
-
-
-
-    <!-- =====================================================
-         PIE DE PÁGINA
-         ===================================================== -->
-
-    <footer>
-
-
-        <div>
-
-            <strong>
-                virelia HEALTH
+</div>
+</div>
+</section>
+</section>
+</main>
+<footer>
+<div>
+<strong>
+                Virelia Health
             </strong>
-
-            <span>
+<span>
                 | Salud, confianza y bienestar.
             </span>
-
-        </div>
-
-
-        <p>
+</div>
+<p>
             Proyecto académico
         </p>
-
-
-    </footer>
-
-
-
-    <!-- =====================================================
-         JAVASCRIPT
-         ===================================================== -->
-
-    <script src="script.js"></script>
-
-
+</footer>
 </body>
-
 </html>

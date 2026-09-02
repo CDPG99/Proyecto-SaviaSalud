@@ -1,0 +1,252 @@
+/* Virelia Health - módulo Nosotros */
+
+/* =========================================================
+   HISTORIA
+   ========================================================= */
+
+.timeline {
+  margin-top: 30px;
+  border-left: 4px solid var(--yellow);
+  padding-left: 25px;
+}
+
+.timeline > div {
+  margin-bottom: 24px;
+}
+
+.timeline strong {
+  color: var(--royal-blue);
+  font-size: 20px;
+}
+
+/* =========================================================
+   MISIÓN / VISIÓN
+   ========================================================= */
+
+.two-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.two-cards article {
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-top: 5px solid var(--royal-blue);
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.two-cards h3 {
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+/* =========================================================
+   OBJETIVOS Y MODERNIZACIÓN
+   ========================================================= */
+
+.objective-grid,
+.modern-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.objective-grid article,
+.modern-grid article {
+  padding: 27px;
+  border: 1px solid #ddd;
+  border-left: 5px solid var(--yellow);
+  transition: .2s;
+}
+
+.objective-grid article:hover,
+.modern-grid article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 17px rgba(0,0,0,.08);
+}
+
+.objective-grid b,
+.modern-grid b {
+  color: var(--royal-blue);
+}
+
+.objective-grid h3,
+.modern-grid h3 {
+  color: var(--blue);
+  margin: 5px 0;
+}
+
+/* =========================================================
+   VALORES
+   ========================================================= */
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.values article {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.values article > span {
+  min-width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: var(--royal-blue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.values h3 {
+  color: var(--blue);
+}
+
+/* =========================================================
+   ORGANIGRAMA
+   ========================================================= */
+
+.org-chart {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.org-main {
+  display: inline-block;
+  min-width: 230px;
+  padding: 16px 25px;
+  background: var(--royal-blue);
+  color: white;
+  font-weight: 800;
+  border-radius: 3px;
+}
+
+.org-main.dark {
+  background: var(--blue);
+}
+
+.org-line {
+  width: 3px;
+  height: 30px;
+  background: var(--yellow);
+  margin: auto;
+}
+
+.org-departments {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.org-departments div {
+  padding: 18px 10px;
+  background: #f7f8fa;
+  border: 2px solid #d9e1e6;
+}
+
+.org-departments strong {
+  display: block;
+  color: var(--blue);
+}
+
+.org-departments small {
+  color: #666;
+}
+
+/* =========================================================
+   TRABAJA CON NOSOTROS
+   ========================================================= */
+
+.work-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+
+.work-layout h3 {
+  color: var(--blue);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.work-layout ul {
+  margin: 20px 0 0 20px;
+}
+
+#careerForm {
+  padding: 27px;
+  background: #f6f8fa;
+  border: 1px solid #ddd;
+}
+
+#careerForm label {
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+#careerForm input,
+#careerForm select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cfd4d8;
+  background: white;
+}
+
+#careerForm button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  background: var(--royal-blue);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#careerForm button:hover {
+  background: var(--blue);
+}
+
+#formMessage {
+  margin-top: 10px;
+  color: var(--royal-blue);
+}
+
+
+/* Responsive del módulo Nosotros */
+@media (max-width: 850px) {
+  .two-cards,
+  .objective-grid,
+  .modern-grid,
+  .values,
+  .work-layout { grid-template-columns: 1fr; }
+  .org-departments { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 520px) {
+  .org-departments { grid-template-columns: 1fr; }
+}

@@ -1,5 +1,5 @@
 /* =========================================================
-   VIRELIA HEALTH
+   Virelia Health
    Diseño inspirado en la interfaz de referencia
    ========================================================= */
 
@@ -371,242 +371,6 @@ body {
 }
 
 /* =========================================================
-   HISTORIA
-   ========================================================= */
-
-.timeline {
-  margin-top: 30px;
-  border-left: 4px solid var(--yellow);
-  padding-left: 25px;
-}
-
-.timeline > div {
-  margin-bottom: 24px;
-}
-
-.timeline strong {
-  color: var(--royal-blue);
-  font-size: 20px;
-}
-
-/* =========================================================
-   MISIÓN / VISIÓN
-   ========================================================= */
-
-.two-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
-
-.two-cards article {
-  padding: 30px;
-  border: 1px solid #ddd;
-  border-top: 5px solid var(--royal-blue);
-}
-
-.circle {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--yellow);
-  color: var(--blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  margin-bottom: 15px;
-}
-
-.two-cards h3 {
-  color: var(--blue);
-  margin-bottom: 8px;
-}
-
-/* =========================================================
-   OBJETIVOS Y MODERNIZACIÓN
-   ========================================================= */
-
-.objective-grid,
-.modern-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.objective-grid article,
-.modern-grid article {
-  padding: 27px;
-  border: 1px solid #ddd;
-  border-left: 5px solid var(--yellow);
-  transition: .2s;
-}
-
-.objective-grid article:hover,
-.modern-grid article:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 7px 17px rgba(0,0,0,.08);
-}
-
-.objective-grid b,
-.modern-grid b {
-  color: var(--royal-blue);
-}
-
-.objective-grid h3,
-.modern-grid h3 {
-  color: var(--blue);
-  margin: 5px 0;
-}
-
-/* =========================================================
-   VALORES
-   ========================================================= */
-
-.values {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
-
-.values article {
-  display: flex;
-  gap: 15px;
-  padding: 20px;
-  border: 1px solid #ddd;
-}
-
-.values article > span {
-  min-width: 43px;
-  height: 43px;
-  border-radius: 50%;
-  background: var(--royal-blue);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 900;
-}
-
-.values h3 {
-  color: var(--blue);
-}
-
-/* =========================================================
-   ORGANIGRAMA
-   ========================================================= */
-
-.org-chart {
-  text-align: center;
-  padding: 25px 0;
-}
-
-.org-main {
-  display: inline-block;
-  min-width: 230px;
-  padding: 16px 25px;
-  background: var(--royal-blue);
-  color: white;
-  font-weight: 800;
-  border-radius: 3px;
-}
-
-.org-main.dark {
-  background: var(--blue);
-}
-
-.org-line {
-  width: 3px;
-  height: 30px;
-  background: var(--yellow);
-  margin: auto;
-}
-
-.org-departments {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 13px;
-  margin-top: 30px;
-}
-
-.org-departments div {
-  padding: 18px 10px;
-  background: #f7f8fa;
-  border: 2px solid #d9e1e6;
-}
-
-.org-departments strong {
-  display: block;
-  color: var(--blue);
-}
-
-.org-departments small {
-  color: #666;
-}
-
-/* =========================================================
-   TRABAJA CON NOSOTROS
-   ========================================================= */
-
-.work-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 45px;
-}
-
-.work-layout h3 {
-  color: var(--blue);
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.work-layout ul {
-  margin: 20px 0 0 20px;
-}
-
-#careerForm {
-  padding: 27px;
-  background: #f6f8fa;
-  border: 1px solid #ddd;
-}
-
-#careerForm label {
-  display: block;
-  margin-top: 13px;
-  margin-bottom: 5px;
-  font-weight: 700;
-  color: var(--blue);
-}
-
-#careerForm input,
-#careerForm select {
-  width: 100%;
-  padding: 11px;
-  border: 1px solid #cfd4d8;
-  background: white;
-}
-
-#careerForm button {
-  width: 100%;
-  margin-top: 20px;
-  padding: 12px;
-  border: none;
-  background: var(--royal-blue);
-  color: white;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-#careerForm button:hover {
-  background: var(--blue);
-}
-
-#formMessage {
-  margin-top: 10px;
-  color: var(--royal-blue);
-}
-
-/* =========================================================
    FOOTER
    ========================================================= */
 
@@ -628,99 +392,116 @@ footer p {
 }
 
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE GENERAL
    ========================================================= */
 
 @media (max-width: 850px) {
-
-  .navbar {
-    padding: 0 20px;
-  }
-
-  .logo {
-    min-width: auto;
-  }
-
-  .logo-name {
-    font-size: 22px;
-  }
-
-  .main-nav {
-    gap: 12px;
-  }
-
-  .nav-btn {
-    font-size: 11px;
-  }
-
-  .hero-placeholder {
-    display: none;
-  }
-
-  .quick-cards,
-  .two-cards,
-  .objective-grid,
-  .modern-grid,
-  .values,
-  .work-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .org-departments {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .inner-page {
-    margin: 25px 15px;
-    padding: 28px 20px;
-  }
+  .navbar { padding: 0 20px; }
+  .logo { min-width: auto; }
+  .logo-name { font-size: 22px; }
+  .main-nav { gap: 12px; }
+  .nav-btn { font-size: 11px; }
+  .hero-placeholder { display: none; }
+  .quick-cards { grid-template-columns: 1fr; }
+  .inner-page { margin: 25px 15px; padding: 28px 20px; }
 }
 
 @media (max-width: 520px) {
+  .logo-symbol { width: 32px; height: 32px; font-size: 23px; }
+  .logo-sub { display: none; }
+  .main-nav { gap: 4px; }
+  .nav-btn { font-size: 9px; }
+  .dropdown-menu { right: -30px; width: 300px; }
+  .hero { height: 470px; }
+  .hero-content { left: 7%; right: 7%; }
+  .hero h1 { font-size: 40px; }
+  footer { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
 
-  .logo-symbol {
-    width: 32px;
-    height: 32px;
-    font-size: 23px;
+/* =========================================
+   ARQUITECTURA MODULAR VIRELIA HEALTH
+   ========================================= */
+.logo { text-decoration: none; color: inherit; }
+.nav-link { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+.dropdown-menu a {
+  display: block;
+  width: 100%;
+  padding: 13px 16px;
+  border: 0;
+  border-bottom: 1px solid rgba(23,79,103,.12);
+  background: #fff;
+  color: #174f67;
+  text-align: left;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+.dropdown-menu a:hover { background: #f4f8fa; }
+.dropdown-menu .dropdown-all { font-weight: 700; color: #1457d9; }
+.module-landing { min-height: 65vh; }
+.module-grid { margin-top: 30px; }
+.module-card { text-decoration: none; color: inherit; display: block; }
+.module-card h3 { color: #174f67; }
+.module-card span { color: #1457d9; font-weight: 700; font-size: 13px; }
+
+/* =========================================================
+   ESPACIOS PARA IMÁGENES EN PÁGINAS INTERNAS
+   Mantienen la misma idea visual del marcador del inicio.
+   Para usar una imagen real, puede reemplazarse este bloque
+   por un <img> conservando la clase content-feature-image.
+   ========================================================= */
+
+.content-image-placeholder {
+  width: 100%;
+  min-height: 250px;
+  margin: 0 0 30px;
+  padding: 28px;
+  border: 3px dashed #c7cdd0;
+  background:
+    linear-gradient(135deg, rgba(20,87,217,.04), rgba(245,196,0,.08)),
+    #fafbfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #8a969b;
+  text-align: center;
+}
+
+.content-image-placeholder__plus {
+  font-size: 68px;
+  line-height: 1;
+  color: var(--royal-blue);
+  font-weight: 300;
+}
+
+.content-image-placeholder strong {
+  color: var(--blue);
+  font-size: 18px;
+}
+
+.content-image-placeholder small {
+  max-width: 520px;
+  font-size: 13px;
+}
+
+.content-feature-image {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  margin: 0 0 30px;
+  object-fit: cover;
+  border-bottom: 6px solid var(--yellow);
+}
+
+@media (max-width: 700px) {
+  .content-image-placeholder {
+    min-height: 190px;
+    padding: 20px;
   }
 
-  .logo-sub {
-    display: none;
-  }
-
-  .main-nav {
-    gap: 4px;
-  }
-
-  .nav-btn {
-    font-size: 9px;
-  }
-
-  .dropdown-menu {
-    right: -30px;
-    width: 300px;
-  }
-
-  .hero {
-    height: 470px;
-  }
-
-  .hero-content {
-    left: 7%;
-    right: 7%;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-  }
-
-  .org-departments {
-    grid-template-columns: 1fr;
-  }
-
-  footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+  .content-image-placeholder__plus {
+    font-size: 54px;
   }
 }
