@@ -1,0 +1,40 @@
+{
+  "name": "virelia-eps",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "frontend",
+    "services/*"
+  ],
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "db:init": "node scripts/init-db.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build --workspace frontend",
+    "test": "npm run test:api && npm run test:frontend",
+    "test:run": "npm test",
+    "test:api": "node --test test/unit.test.js",
+    "test:integration": "node --test --test-concurrency=1 test/integration.test.js",
+    "test:frontend": "npm test --workspace frontend",
+    "test:coverage": "npm run test:coverage --workspace frontend",
+    "test:e2e": "playwright test",
+    "test:all": "npm test && npm run test:integration && npm run test:e2e",
+    "db:prepare": "node scripts/prepare-db.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "format": "prettier --write frontend/src shared services scripts gateway test tests docs",
+    "format:check": "prettier --check frontend/src shared services scripts gateway test tests docs"
+  },
+  "dependencies": {
+    "mysql2": "^3.15.0",
+    "nodemailer": "^10.1.7",
+    "pdf-lib": "^1.17.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "prettier": "^3.6.2"
+  }
+}
